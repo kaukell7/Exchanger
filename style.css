@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.converter-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.rate-setting {
+    background: #f0f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.rate-setting label {
+    font-size: 13px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.rate-setting input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.flex-input {
+    display: flex;
+    position: relative;
+}
+
+.flex-input input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 60px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.flex-input input:focus {
+    border-color: #667eea;
+}
+
+.currency-label {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #a0aec0;
+}
+
+.result-text {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #2d3748;
+}
+
+.result-text span {
+    font-weight: bold;
+    color: #38a169;
+    font-size: 18px;
+}
+
+.arrow-divider {
+    text-align: center;
+    font-size: 24px;
+    color: #a0aec0;
+    margin: 15px 0;
+    user-select: none;
+}
