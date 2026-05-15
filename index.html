@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter (THB <-> MMK)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="converter-box">
+        <h2>Online Currency Converter</h2>
+        <p class="subtitle">THB ⇄ MMK Real-time Exchange</p>
+
+        <!-- Exchange Rate Settings (Admin Area/Static Rate) -->
+        <div class="rate-setting">
+            <label for="current-rate">ယနေ့ ပေါက်ဈေး (1 THB = ? MMK):</label>
+            <input type="number" id="current-rate" value="130" min="1" oninput="updateConversion()">
+        </div>
+
+        <hr>
+
+        <!-- Convert THB to MMK -->
+        <div class="input-group">
+            <label>Thai Baht (THB) မှ Myanmar Kyat (MMK)</label>
+            <div class="flex-input">
+                <input type="number" id="thb-input" placeholder="ဘတ် အရေအတွက် ထည့်ပါ" oninput="convertThbToMmk()">
+                <span class="currency-label">THB</span>
+            </div>
+            <p class="result-text">ရရှိမည့်ငွေ: <span id="mmk-output">0</span> MMK</p>
+        </div>
+
+        <div class="arrow-divider">⇄</div>
+
+        <!-- Convert MMK to THB -->
+        <div class="input-group">
+            <label>Myanmar Kyat (MMK) မှ Thai Baht (THB)</label>
+            <div class="flex-input">
+                <input type="number" id="mmk-input" placeholder="ကျပ် အရေအတွက် ထည့်ပါ" oninput="convertMmkToThb()">
+                <span class="currency-label">MMK</span>
+            </div>
+            <p class="result-text">ရရှိမည့်ငွေ: <span id="thb-output">0</span> THB</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
